@@ -77,7 +77,7 @@ def _insert(t: str, data):
             values = [(
                 str(uuid.uuid4()),
                 v.get("id_province"),
-                v.get("name_city"),
+                v.get("id_city"),
                 v.get("name_city"),
                 dt
             ) for v in data]
@@ -86,7 +86,7 @@ def _insert(t: str, data):
             values = [(
                 str(uuid.uuid4()),
                 v.get("id_city"),
-                v.get("name_district"),
+                v.get("id_district"),
                 v.get("name_district"),
                 dt
             ) for v in data]
@@ -95,7 +95,7 @@ def _insert(t: str, data):
             values = [(
                 str(uuid.uuid4()),
                 v.get("id_district"),
-                v.get("name_subdistrict"),
+                v.get("id_subdistrict"),
                 v.get("name_subdistrict"),
                 dt
             ) for v in data]
